@@ -35,7 +35,7 @@ export default function Navbar() {
           <div className="nav__items">
               <Link href={"/"}>Home</Link>
               <Link href={"/"}>Ethiopia speciality</Link>
-              <Link href={"#"} className="nav__dropdown">
+              <div className="nav__dropdown">
                 <div>Destinations {"▼"}</div>
                 <div className="nav__dropdown_c">
                     <Link href={"/"} >The Northern Circuit</Link>
@@ -43,8 +43,8 @@ export default function Navbar() {
                     <Link href={"/"} >The Eastern Circuit</Link>
                     <Link href={"/"} >The Western Circuit</Link>
                 </div>
-              </Link>
-              <Link href={"#"} className="nav__dropdown">
+              </div>
+              <div className="nav__dropdown">
                 <div>Tours by experiences {"▼"}</div>
                 <div className="nav__dropdown_c">
                     <Link href={"/"} >Historical Tours</Link>
@@ -54,7 +54,7 @@ export default function Navbar() {
                     <Link href={"/"} >Wildlife Safaris</Link>
                     <Link href={"/"} >Food and Drink Tours</Link>
                 </div>
-              </Link>
+              </div>
               <Link href={"/"}>Popular ethiopia tours</Link>
               <Link href={"/"}>Our service</Link>
               <Link href={"/"}>About us</Link>
@@ -74,7 +74,7 @@ export default function Navbar() {
           <div className="navItems__mobile">
               <Link href={"/"} className="navItems__item" onClick={() => toggleMobile()}>Home</Link>
               <Link href={"/"} className="navItems__item" onClick={() => toggleMobile()}>Ethiopia speciality</Link>
-              <Link href={"/"} className="navItems__item nav__dropdown">
+              <div className="navItems__item nav__dropdown">
                   <div>Destinations {"▼"}</div>
                   <div style={{backgroundColor: "#252324"}} className="nav__dropdown_c">
                       <Link href={"/"} onClick={() => toggleMobile()} >The Northern Circuit</Link>
@@ -82,18 +82,18 @@ export default function Navbar() {
                       <Link href={"/"} onClick={() => toggleMobile()} >The Eastern Circuit</Link>
                       <Link href={"/"} onClick={() => toggleMobile()} >The Western Circuit</Link>
                   </div>
-              </Link>
-              <Link href={"/"} className="navItems__item nav__dropdown">
+              </div>
+              <div href={"/"} className="navItems__item nav__dropdown">
                   <div>Tours by experiences {"▼"}</div>
                   <div style={{backgroundColor: "#252324"}} className="nav__dropdown_c">
-                  <Link href={"/"} >Historical Tours</Link>
+                    <Link href={"/"} >Historical Tours</Link>
                     <Link href={"/"} onClick={() => toggleMobile()} >Cultural Tours</Link>
                     <Link href={"/"} onClick={() => toggleMobile()} >Photographic Tours</Link>
                     <Link href={"/"} onClick={() => toggleMobile()} >Trekking and Hiking Tours</Link>
                     <Link href={"/"} onClick={() => toggleMobile()} >Wildlife Safaris</Link>
                     <Link href={"/"} onClick={() => toggleMobile()} >Food and Drink Tours</Link>
                   </div>
-              </Link>
+              </div>
               <Link href={"/"} className="navItems__item" onClick={() => toggleMobile()}>Popular ethiopia tours</Link>
               <Link href={"/"} className="navItems__item" onClick={() => toggleMobile()}>Our service</Link>
               <Link href={"/"} className="navItems__item" onClick={() => toggleMobile()}>About us</Link>

@@ -46,6 +46,7 @@
   object-fit: cover;
   filter: brightness(65%);
 }
+
 .hero__slider__btn{
   position: absolute;
   top: 50%;
@@ -64,10 +65,10 @@
   color: #fff;
 }
 .prev{
-  left: 50px;
+  left: 10px;
 }
 .next{
-  right: 50px;
+  right: 10px;
 }
 .hero__slide__content{
   position: absolute;

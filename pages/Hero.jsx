@@ -81,6 +81,18 @@ export default function Hero() {
         if (slideRef.current) {
             slideRef.current.style.transform = `translateY(-${current * 100}%)`
         }
+
+        const interval = setInterval(() => {
+            if (slideRef.current) {
+                if (current === length - 1) {
+                    setCurrent(0)
+                } else {
+                    setCurrent(current + 1)
+                }
+            }
+        }, 5000)
+
+        return () => clearInterval(interval)
     }, [current])
 
   return (
