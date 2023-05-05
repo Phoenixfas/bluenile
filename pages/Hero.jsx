@@ -108,7 +108,7 @@ export default function Hero() {
 
             <div ref={slideRef} className={style.hero__slider}>
                 <div className={style.hero__slide}>
-                    <Image src="/images/home/simien1.jpg" alt="hero1" width={1920} height={1080} />
+                    <Image src="/images/home/hero/simien1.jpg" alt="hero1" width={1920} height={1080} />
                     <motion.div className={style.hero__slide__content}>
                         <AnimatePresence>
                             {current === 0 && (
@@ -122,7 +122,7 @@ export default function Hero() {
                     </motion.div>
                 </div>
                 <div className={style.hero__slide}>
-                    <Image src="/images/home/omo.jpg" alt="hero1" width={1920} height={1080} />
+                    <Image src="/images/home/hero/omo.jpg" alt="hero1" width={1920} height={1080} />
                     <motion.div className={style.hero__slide__content}>
                         <AnimatePresence>
                             {current === 1 && (
@@ -136,7 +136,7 @@ export default function Hero() {
                     </motion.div>
                 </div>
                 <div className={style.hero__slide}>
-                    <Image src="/images/home/harar.jpg" alt="hero1" width={1920} height={1080} />
+                    <Image src="/images/home/hero/harar.jpg" alt="hero1" width={1920} height={1080} />
                     <motion.div className={style.hero__slide__content}>
                         <AnimatePresence>
                             {current === 2 && (
@@ -150,7 +150,7 @@ export default function Hero() {
                     </motion.div>
                 </div>
                 <div className={style.hero__slide}>
-                    <Image src="/images/home/west.jpg" alt="hero1" width={1920} height={1080} />
+                    <Image src="/images/home/hero/west.jpg" alt="hero1" width={1920} height={1080} />
                     <motion.div className={style.hero__slide__content}>
                         <AnimatePresence>
                             {current === 3 && (

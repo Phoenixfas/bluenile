@@ -2,6 +2,8 @@ import Head from 'next/head'
 import style from '../styles/Home.module.css'
 import Image from 'next/image'
 import Hero from './Hero'
+import Everything from './Everything'
+import Welcome from './Welcome'
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
         </Head>
         
         <Hero />
+        <Everything />
+        <Welcome />
     </div>
   )
 }
