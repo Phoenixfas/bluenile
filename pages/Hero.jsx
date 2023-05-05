@@ -108,7 +108,7 @@ export default function Hero() {
 
             <div ref={slideRef} className={style.hero__slider}>
                 <div className={style.hero__slide}>
-                    <Image src="/images/home/simien.jpg" alt="hero1" width={1920} height={1080} />
+                    <Image src="/images/home/simien1.jpg" alt="hero1" width={1920} height={1080} />
                     <motion.div className={style.hero__slide__content}>
                         <AnimatePresence>
                             {current === 0 && (
@@ -128,7 +128,7 @@ export default function Hero() {
                             {current === 1 && (
                                 <>
                                     <motion.h1 variants={variant1} initial="hidden" animate="visible" exit="exit" >THE SOUTHERN CIRCUIT</motion.h1>
-                                    <motion.p variants={variant2} initial="hidden" animate="visible" exit="exit" >An experience that is truly unique and awe-inspiring.</motion.p>
+                                    <motion.p variants={variant2} initial="hidden" animate="visible" exit="exit" >A land of breathtaking natural beauty and rich cultural diversity.</motion.p>
                                     <motion.button variants={variant2} initial="hidden" animate="visible" exit="exit" >More Detail</motion.button>
                                 </>
                             )}
@@ -142,7 +142,7 @@ export default function Hero() {
                             {current === 2 && (
                                 <>
                                     <motion.h1 variants={variant1} initial="hidden" animate="visible" exit="exit" >THE EASTERN CIRCUIT</motion.h1>
-                                    <motion.p variants={variant2} initial="hidden" animate="visible" exit="exit" >An experience that is truly unique and awe-inspiring.</motion.p>
+                                    <motion.p variants={variant2} initial="hidden" animate="visible" exit="exit" >Explore the stunning and culturally rich region of Eastern Ethiopia. </motion.p>
                                     <motion.button variants={variant2} initial="hidden" animate="visible" exit="exit" >More Detail</motion.button>
                                 </>
                             )}
@@ -156,7 +156,7 @@ export default function Hero() {
                             {current === 3 && (
                                 <>
                                     <motion.h1 variants={variant1} initial="hidden" animate="visible" exit="exit" >THE WESTERN CIRCUIT</motion.h1>
-                                    <motion.p variants={variant2} initial="hidden" animate="visible" exit="exit" >An experience that is truly unique and awe-inspiring.</motion.p>
+                                    <motion.p variants={variant2} initial="hidden" animate="visible" exit="exit" >A region that boasts of breathtaking landscapes, incredible wildlife, and unparalleled ethnic diversity.</motion.p>
                                     <motion.button variants={variant2} initial="hidden" animate="visible" exit="exit" >More Detail</motion.button>
                                 </>
                             )}

@@ -107,3 +107,24 @@
   background-color: #307dab;
   color: #fff;
 }
+
+
+/*///////////////////////////////////////////////////////////////////// @media queries //////////////////////////////////////////////////////////////*/ 
+
+
+@media only screen and (max-width: 599px){
+  .hero__slide__content h1{
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    margin-bottom: 20px;
+  }
+  .hero__slide__content p{
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px){
+  
+}
+@media only screen and (min-width: 768px) and (max-width: 1000px){
+  
+}
