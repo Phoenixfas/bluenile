@@ -1,14 +1,26 @@
 import Image from "next/image"
 import style from "../styles/Home.module.css"
 import Link from "next/link"
+import { Parallax, ParallaxProvider } from "react-scroll-parallax"
 
 export default function Welcome() {
   return (
     <div className={style.welcome}>
         <div className={style.welcome__l}>
+            {/* <ParallaxProvider>
+                <div className={style.welcome__img__outer}>
+                    <Parallax speed={-20} className={style.welcome__img}>
+                        <Image src="/images/home/abay.jpg" alt="Welcome" width={500} height={500} quality={100} unoptimized />
+                    </Parallax>
+                </div>
+            </ParallaxProvider> */}
             <div className={style.welcome__img}>
-                <Image src="/images/home/abay.jpg" alt="Welcome" width={500} height={500} quality={100} unoptimized />
-            </div>
+                <ParallaxProvider>
+                    <Parallax speed={-20} className={style.welcome__img__inner}>
+                            <Image src='/images/home/abay.jpg' alt="Welcome" fill />
+                    </Parallax>
+                </ParallaxProvider>
+                </div>
         </div>
         <div className={style.welcome__r}>
             <h1 className={style.welcome__title}>Welcome to Blue Nile Expeditions</h1>

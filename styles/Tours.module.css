@@ -63,3 +63,108 @@
     line-height: 6rem;
   }
   /* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+  .tourslist{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+  }
+  .tourslist h1{
+    color: #307dab;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+  .tourslist__container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+  .tourslist__item{
+    width: 320px;
+    /* height: 350px; */
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #307dabaa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+  }
+  .tourslist__item:hover{
+    transform: scale(1.1);
+  }
+  .tour__img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  .tour__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s ease-in-out;
+  }
+  .tourslist__item:hover .tour__img img{
+    transform: scale(1.15);
+  }
+  .tour__content{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tour__content h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .tour__content p{
+    font-size: .8rem;
+    font-weight: 400;
+    color: #888888;
+    margin-bottom: 15px;
+  }
+  .tour__content a{
+    justify-self: flex-end;
+    padding: 10px 30px;
+    border: 1px solid #307dab;
+    border-radius: 10px;
+    color: #307dab;
+    font-size: .8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  .tour__content a:hover{
+    background-color: #307dab;
+    color: #fff;
+  }
+
+
+/*///////////////////////////////////////////////////////////////////// @media queries //////////////////////////////////////////////////////////////*/ 
+
+
+@media only screen and (max-width: 599px){
+  .tourslist__item{
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px){
+  
+}
+@media only screen and (min-width: 768px) and (max-width: 1000px){
+  
+}
+@media only screen and (min-width: 1000px) and (max-width: 1200px){
+  
+}

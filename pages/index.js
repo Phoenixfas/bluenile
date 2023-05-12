@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Hero from './Hero'
 import Everything from './Everything'
 import Welcome from './Welcome'
+import ToursList from './ToursList'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Hero />
         <Everything />
         <Welcome />
+        <ToursList />
     </div>
   )
 }

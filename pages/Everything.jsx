@@ -10,8 +10,8 @@ export default function Everything() {
                 <Image src="/images/home/icons/plane.png" alt="plane" width={500} height={500} />
             </div>
             <div className={style.everything__con__r}>
-                <h3>300+ DESTINATIONS</h3>
-                <p>Lorem, ipsum dolor.</p>
+                <h3>10+ DESTINATIONS</h3>
+                <p>Fresh Adventures.</p>
             </div>
         </div>
         <div className={style.everything__con}>
@@ -20,7 +20,7 @@ export default function Everything() {
             </div>
             <div className={style.everything__con__r}>
                 <h3>AFORDABLE PRICE</h3>
-                <p>Lorem, ipsum dolor.</p>
+                <p>Pocket Friendly.</p>
             </div>
         </div>
         <div className={style.everything__con}>
@@ -28,8 +28,8 @@ export default function Everything() {
                 <Image src="/images/home/icons/contacts.png" alt="plane" width={500} height={500} />
             </div>
             <div className={style.everything__con__r}>
-                <h3>GREAT CUSTOMERS</h3>
-                <p>Lorem, ipsum dolor.</p>
+                <h3>HAPPY CUSTOMERS</h3>
+                <p>Enjoy Every Moment.</p>
             </div>
         </div>
         <div className={style.everything__con}>
@@ -38,7 +38,7 @@ export default function Everything() {
             </div>
             <div className={style.everything__con__r}>
                 <h3>TRUSTED AND SAFE</h3>
-                <p>Lorem, ipsum dolor.</p>
+                <p>Certified.</p>
             </div>
         </div>
 
