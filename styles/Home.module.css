@@ -266,6 +266,163 @@
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+.whyeth{
+  width: 100%;
+  /* height: 400px; */
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.whyeth__img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+  background-image: url(/images/home/waterfall.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.whyeth__img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.whyeth__content{
+  position: relative;
+  color: #fff;
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 30px;
+}
+.whyeth__content h1{
+  flex: .8;
+  min-width: 500px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  font-size: 3rem;
+}
+.whyeth__list{
+  background-color: #307dab88;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+.whyeth__item{
+  /* min-width: 200px; */
+  max-width: 50%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+  transition: .3s ease-in-out;
+}
+.whyeth__item:hover{
+  background-color: #252324;
+}
+.whyeth__item h3{
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+.destination{
+  width: 100%;
+  padding: 50px 20px;
+}
+.destination__container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.dest{
+  position: relative;
+  width: 300px;
+  height: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dest__img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.dest__img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+.dest__content{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  background-color: #307dabaa;
+  color: #fff;
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+.dest__content:hover{
+  opacity: 1;
+}
+.dest__content p{
+  font-size: .9rem;
+  line-height: 1.5rem;
+  margin-bottom: 20px;
+}
+.dest__content a{
+  width: fit-content;
+  padding: 15px 40px;
+  border-radius: 999px;
+  background-color: #252324;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: .5s;
+}
+.dest__content a:hover{
+  color: #307dab;
+}
+.dest__name{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 80%;
+  padding: 20px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  /* text-align: center; */
+}
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 /*///////////////////////////////////////////////////////////////////// @media queries //////////////////////////////////////////////////////////////*/ 
 
@@ -302,6 +459,28 @@
     font-size: 1.2rem;
     text-align: center;
   }
+  .whyeth__content{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .whyeth__content h1{
+    font-size: 2rem;
+    min-width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  .whyeth__item{
+    min-width: 250px;
+    max-width: 100%;
+    height: 300px;
+  }
+  .whyeth__item:nth-of-type(odd){
+    background-color: #252324;
+  }
+  .whyeth__item p{
+    text-align: justify;
+    hyphens: auto;
+  }
 }
 @media only screen and (min-width: 600px) and (max-width: 768px){
   .everything{
@@ -321,6 +500,12 @@
   .welcome__title{
     text-align: center;
   }
+  .whyeth__content{
+    flex-direction: column;
+  }
+  .whyeth__content h1{
+    text-align: center;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1000px){
   .welcome{
@@ -332,6 +517,12 @@
   .welcome__text{
     font-size: 1.5rem;
     padding: 0 100px;
+  }
+  .whyeth__content{
+    flex-direction: column;
+  }
+  .whyeth__content h1{
+    text-align: center;
   }
 }
 @media only screen and (min-width: 1000px) and (max-width: 1200px){

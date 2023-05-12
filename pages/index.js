@@ -5,6 +5,8 @@ import Hero from './Hero'
 import Everything from './Everything'
 import Welcome from './Welcome'
 import ToursList from './ToursList'
+import WhyEthiopia from './WhyEthiopia'
+import Destinations from './Destinations'
 
 export default function Home() {
   return (
@@ -20,6 +22,8 @@ export default function Home() {
         <Everything />
         <Welcome />
         <ToursList />
+        <WhyEthiopia />
+        <Destinations />
     </div>
   )
 }
