@@ -8,7 +8,7 @@ export default function ToursList() {
   const [t, setT] = useState([])
 
   useEffect(() => {
-    setT(tours.reverse().splice(0, 3))
+    setT(tours.splice(0, 3))
   }, [tours])
 
   return (
