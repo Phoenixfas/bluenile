@@ -23,7 +23,7 @@ export default function Details() {
         <div className={style.welcome__img}>
             <Image src="/images/home/welcome.png" alt="Welcome" width={1000} height={500} quality={100} unoptimized />
         </div>
-        <motion.p variants={variants1} animate={controls} className={style.welcome__text}>Welcome to Blue Nile Expeditions, your ultimate guide to exploring Ethiopia's vibrant culture, rich history, and stunning landscapes.</motion.p>
+        <motion.p variants={variants1} animate={controls} className={style.welcome__text}>Welcome to Blue Nile Expeditions, your ultimate guide to exploring Ethiopia&apos;s vibrant culture, rich history, and stunning landscapes.</motion.p>
     </div>
   )
 }

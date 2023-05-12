@@ -13,7 +13,7 @@ export default function Welcome() {
         <div className={style.welcome__r}>
             <h1 className={style.welcome__title}>Welcome to Blue Nile Expeditions</h1>
             <p>
-                Welcome to Blue Nile Expeditions, your ultimate guide to exploring Ethiopia's vibrant culture, rich history, and stunning landscapes.
+                Welcome to Blue Nile Expeditions, your ultimate guide to exploring Ethiopia&apos;s vibrant culture, rich history, and stunning landscapes.
             </p>
             <p>
                 Embark on a journey of a lifetime with our customized tours that cater to all your travel needs and preferences. Whether you are an adventure seeker, history buff, nature lover or a cultural enthusiast, we have got you covered.
