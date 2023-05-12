@@ -1,29 +1,28 @@
 import Image from "next/image"
 import style from "../styles/Home.module.css"
-import { motion, useInView, useAnimationControls } from 'framer-motion'
-import { useEffect, useRef} from 'react'
-import { Parallax, ParallaxProvider } from 'react-scroll-parallax'
-
-const variants1 = {
-    visible: { opacity: 1, y: 0, transition: { duration: 1, delay: .2 } },
-    hidden: { opacity: 0, y: 100, transition: { duration: .5, } }
-}
+import Link from "next/link"
 
 export default function Welcome() {
-    const ref = useRef(null)
-    const isInView = useInView(ref, { margin: "-100px", once: false})
-    const controls = useAnimationControls()
-
-    useEffect(() => {
-        controls.start(isInView ? "visible" : "hidden")
-      }, [isInView, controls]);
   return (
-
-    <div ref={ref} className={style.welcome}>
-        <div className={style.welcome__img}>
-            <Image src="/images/home/welcome.png" alt="Welcome" width={1000} height={500} quality={100} unoptimized />
+    <div className={style.welcome}>
+        <div className={style.welcome__l}>
+            <div className={style.welcome__img}>
+                <Image src="/images/home/abay.jpg" alt="Welcome" width={500} height={500} quality={100} unoptimized />
+            </div>
         </div>
-        <motion.p variants={variants1} animate={controls} className={style.welcome__text}>Welcome to Blue Nile Expeditions, your ultimate guide to exploring Ethiopia's vibrant culture, rich history, and stunning landscapes.</motion.p>
+        <div className={style.welcome__r}>
+            <h1 className={style.welcome__title}>Welcome to Blue Nile Expeditions</h1>
+            <p>
+                Welcome to Blue Nile Expeditions, your ultimate guide to exploring Ethiopia's vibrant culture, rich history, and stunning landscapes.
+            </p>
+            <p>
+                Embark on a journey of a lifetime with our customized tours that cater to all your travel needs and preferences. Whether you are an adventure seeker, history buff, nature lover or a cultural enthusiast, we have got you covered.
+            </p>
+            <p>
+                Our experienced and knowledgeable guides will take you off the beaten path and introduce you to the hidden gems of Ethiopia that will leave you in awe. From the breathtaking Simien Mountains to the historical Lalibela Churches, from the ancient city of Axum to the Danakil Depression, our tours are designed to immerse you in the true essence of Ethiopia.
+            </p>
+            <Link href="/about" className={style.welcome__btn}>Learn More</Link>
+        </div>
     </div>
   )
 }

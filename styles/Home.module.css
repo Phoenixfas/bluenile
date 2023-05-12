@@ -151,7 +151,7 @@
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-.welcome{
+/* .welcome{
   position: relative;
   width: 100%;
   height: 400px;
@@ -186,52 +186,85 @@
   text-align: center;
   font-size: 2rem;
   color: #fff;
-}
-/* ////////////////// */
-/* .hero__img{
-  position: absolute;
-  top: 0;
-  left: 0;
+} */
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+.welcome{
+  background-color: #eee;
   width: 100%;
-  height: 800px;
-  transform: translateY(100%);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+  padding: 50px 100px;
+}
+.welcome__l{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.welcome__img{
+  width: 500px;
+  height: 500px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #307dab;
+  border-radius: 30px;
   overflow: hidden;
-  z-index: 1;
-  filter: brightness(0.65);
-  animation: heroEnter 1s ease-in-out;
+  transition: .3s;
 }
-@keyframes heroEnter{
-  0%{
-    scale: 1.5;
-  }
-  100%{
-    scale: 1;
-  }
+.welcome__img:hover{
+  box-shadow: 0 0 30px #307dab;
 }
-.hero__img img{
+.welcome__img img{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 20px;
+  transition: .3s;
 }
-.hero__text{
-  position: relative;
-  z-index: 2;
-  height: 100%;
-  width: 100%;
-  padding:  50px;
+.welcome__img:hover img{
+  transform: scale(1.1);
+}
+.welcome__r{
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
+}
+.welcome__title{
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.welcome__r p{
+  /* max-width: 550px; */
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.welcome__btn{
+  margin-top: 20px;
+  width: fit-content;
+  padding: 10px 30px;
+  border: 2px solid #307dab;
+  outline: none;
+  border-radius: 999px;
+  background-color: transparent;
+  color: #307dab;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: .5s;
+}
+.welcome__btn:hover{
+  background-color: #307dab;
   color: #fff;
 }
-.hero__text__title{
-  max-width: 60%;
-  text-align: center;
-  font-size: 3rem;
-  font-weight: 600;
-  line-height: 3rem;
-} */
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////// */
 
@@ -251,23 +284,64 @@
     padding: 50px;
     justify-content: center;
   }
+  .welcome{
+    flex-direction: column;
+    padding: 50px;
+  }
+  .welcome__img{
+    width: 100%;
+    height: 300px;
+  }
+  .welcome__r{
+    align-items: center;
+  }
   .welcome__text{
     font-size: 1.2rem;
     padding: 0 50px;
+  }
+  .welcome__title{
+    font-size: 1.2rem;
+    text-align: center;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 768px){
   .everything{
     padding: 50px;
   }
+  .welcome{
+    flex-direction: column;
+    padding: 50px;
+  }
+  .welcome__r{
+    align-items: center;
+  }
+  .welcome__text{
+    font-size: 1.5rem;
+    padding: 0 100px;
+  }
+  .welcome__title{
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1000px){
+  .welcome{
+    flex-direction: column;
+  }
+  .welcome__r{
+    align-items: center;
+  }
   .welcome__text{
     font-size: 1.5rem;
     padding: 0 100px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1000px){
+@media only screen and (min-width: 1000px) and (max-width: 1200px){
   .welcome__text{
     font-size: 1.5rem;
     padding: 0 100px;
+  }
+  .welcome__img{
+    width: 400px;
+    height: 500px;
   }
 }

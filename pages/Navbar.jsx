@@ -34,7 +34,7 @@ export default function Navbar() {
           </div>
           <div className="nav__items">
               <Link href={"/"}>Home</Link>
-              <Link href={"/"}>Ethiopia speciality</Link>
+              <Link href={"/"}>Why Ethiopia</Link>
               <div className="nav__dropdown">
                 <div>Destinations {"▼"}</div>
                 <div className="nav__dropdown_c">
@@ -45,7 +45,7 @@ export default function Navbar() {
                 </div>
               </div>
               <div className="nav__dropdown">
-                <div>Tours by experiences {"▼"}</div>
+                <Link href={"/tours"}>Tours by experiences {"▼"}</Link>
                 <div className="nav__dropdown_c">
                     <Link href={"/"} >Historical Tours</Link>
                     <Link href={"/"} >Cultural Tours</Link>
@@ -73,7 +73,7 @@ export default function Navbar() {
           </div>
           <div className="navItems__mobile">
               <Link href={"/"} className="navItems__item" onClick={() => toggleMobile()}>Home</Link>
-              <Link href={"/"} className="navItems__item" onClick={() => toggleMobile()}>Ethiopia speciality</Link>
+              <Link href={"/"} className="navItems__item" onClick={() => toggleMobile()}>Why Ethiopia</Link>
               <div className="navItems__item nav__dropdown">
                   <div>Destinations {"▼"}</div>
                   <div style={{backgroundColor: "#252324"}} className="nav__dropdown_c">
@@ -84,7 +84,7 @@ export default function Navbar() {
                   </div>
               </div>
               <div href={"/"} className="navItems__item nav__dropdown">
-                  <div>Tours by experiences {"▼"}</div>
+                  <Link href={"/tours"} onClick={() => toggleMobile()}>Tours by experiences {"▼"}</Link>
                   <div style={{backgroundColor: "#252324"}} className="nav__dropdown_c">
                     <Link href={"/"} >Historical Tours</Link>
                     <Link href={"/"} onClick={() => toggleMobile()} >Cultural Tours</Link>

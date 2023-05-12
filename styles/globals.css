@@ -10,8 +10,6 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
-  height: 100vh;
 }
 
 
@@ -24,11 +22,11 @@ a {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 1;
+  z-index: 99999;
   width: 100%;
   height: 100px;
   padding: 0 100px;
-  background-color: #ffffff55;
+  background-color: #ffffffcc;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -51,7 +49,7 @@ a {
   align-items: center;
   justify-content: center;
   gap: 30px;
-  color: #fff;
+  color: #252324;
   font-size: 1rem;
 }
 .nav__items a{
@@ -62,7 +60,7 @@ a {
   transition: .3s;
 }
 .nav__items a:hover{
-  color: #252324;
+  color: #307dab;
 }
 .nav__dropdown{
   position: relative;
