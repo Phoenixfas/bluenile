@@ -105,6 +105,17 @@ a {
 }
 .nav__dropdown:hover .nav__dropdown_c{
   display: flex;
+  animation: appear 0.3s ease-in-out;
+}
+@keyframes appear{
+  0%{
+    opacity: 0;
+    transform: rotateX(-90deg) translateY(-10px) translateX(-50%);
+  }
+  100%{
+    opacity: 1;
+    transform: rotateX(0deg) translateY(0px) translateX(-50%);
+  }
 }
 
 
@@ -185,10 +196,11 @@ a {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  filter: brightness(0.5);
+  /* filter: brightness(0.5); */
 }
 .footer__top{
   position: relative;
+  background: radial-gradient(#307dab88, #252324);
   width: 100%;
   padding: 70px 20px;
   display: flex;

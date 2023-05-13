@@ -1,8 +1,8 @@
 const destinations = [
     {
-        id: 1,
+        id: "1",
         name: "The Northern Circuit",
-        image: "https://picsum.photos/1100",
+        image: "/images/home/hero/simien1.jpg",
         description: [
             "As a visitor to Ethiopia, exploring the northern region is a must-see. Northern Ethiopia offers an experience that is truly unique and awe-inspiring. It is known as the Historical Circuit, with over two millennia's worth of ancient treasures to discover. From the hidden tombs at Aksum to the collection of castles in and around Gonder, to the unique rock churches in Lalibela, Tigray, and Lake Tana, there is so much to discover.",
             "For nature enthusiasts, the Simien Mountains National Park is a must-visit destination, with its staggeringly scenic landscape and concentrations of the endemic gelada baboon and Walia ibex. The Danakil Depression is also a favorite among adventure travelers, with its permanent lava lake and bright-yellow sulphuric plain, while canyons and peaks offer endless opportunities for exploration.",
@@ -13,9 +13,9 @@ const destinations = [
         ]
     },
     {
-        id: 2,
+        id: "2",
         name: "The Southern Circuit",
-        image: "https://picsum.photos/1101",
+        image: "/images/home/hero/omo.jpg",
         description: [
             "Southern Ethiopia is a land of breathtaking natural beauty and rich cultural diversity, offering visitors a chance to experience the best of both worlds. As you explore this region, you will be struck by the stunning landscapes, diverse array of national parks, and the sheer abundance of wildlife. Blue Nile Expeditions is your gateway to this unforgettable destination, where you can discover the hidden gems of Southern Ethiopia and create memories that will last a lifetime.",
             "One of the most striking features of Southern Ethiopia is the Great Rift Valley, which has created a dramatic landscape of lakes and mountains. Here, you can witness crocodiles, hippos, and an array of birdlife as you explore the Rift Valley lakes. With its high number of endemic wildlife, Southern Ethiopia is a must-visit destination for nature lovers and wildlife enthusiasts alike. From the rare Ethiopian wolf in the Bale Mountains National Park to the mountain nyala in the high country, the region is home to some of the world's most fascinating and unique species.",
@@ -25,9 +25,9 @@ const destinations = [
         ]
     },
     {
-        id: 3,
+        id: "3",
         name: "The Eastern Circuit",
-        image: "https://picsum.photos/1102",
+        image: "/images/home/hero/harar.jpg",
         description: [
             "As a leading expedition company specializing in East African adventures, Blue Nile Expeditions is proud to offer our clients the chance to explore the stunning and culturally rich region of Eastern Ethiopia. While much of this area may seem like a harsh and inhospitable landscape of dusty acacia scrub and nondescript towns, hidden amongst this wilderness are true gems of adventure and exploration.",
             "At the heart of Eastern Ethiopia lies the ancient walled city of Harar, undoubtedly the region's pièce de résistance. Steeped in myth and legend, this city has long been known as the commercial hub of the Horn, attracting powerful merchants, artisans, and Islamic scholars from across the globe. Today, visitors can explore the city's twisting alleyways and vibrant markets, witnessing the unique and fascinating blend of cultures that makes this place so special. And for those who are truly intrepid, the desolate southern Danakil Desert awaits, largely unexplored since the days of legendary adventurer Wilfred Thesiger.",
@@ -37,9 +37,9 @@ const destinations = [
         ]
     },
     {
-        id: 4,
+        id: "4",
         name: "The Western Circuit",
-        image: "https://picsum.photos/1103",
+        image: "/images/home/hero/west.jpg",
         description: [
             'The wild and untamed Western Ethiopia, a region that boasts of breathtaking landscapes, incredible wildlife, and unparalleled ethnic diversity. While the region is often dubbed as the "Wild West" of the country, it remains one of the most beautiful and least visited parts of Ethiopia, waiting to be explored.',
             "The landscape of Western Ethiopia is a mix of dense rainforests, coffee plantations, muddy agricultural towns, savannah grasslands, and wildlife-infested swamps. It's a region where high plateaus are carpeted with crop fields, and where the Kafa Biosphere Reserve is home to over 300 species inhabiting some of the densest forests in the West.",
@@ -56,3 +56,5 @@ const destinations = [
         ]
     }
 ]
+
+export default destinations

@@ -1,4 +1,4 @@
-const tours = [
+const toursByExperience = [
     {
         id: 1,
         name: "Historical Tours",
@@ -55,7 +55,6 @@ const tours = [
             "No matter what your interests are, we have the perfect tour for you. Our knowledgeable and experienced guides will ensure that you have an unforgettable experience and leave Ethiopia with memories that will last a lifetime. Contact us today to book your tour and start planning your adventure in Ethiopia!",
         ],
     },
-
 ]
 
-export default tours
+export default toursByExperience

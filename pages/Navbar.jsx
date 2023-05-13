@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import { AiOutlineClose } from "react-icons/ai"
 import { HiOutlineMenu } from "react-icons/hi"
+import destinations from "../data/destinations";
 
 export default function Navbar() {
   const mobileRef = useRef(null)
@@ -30,18 +31,17 @@ export default function Navbar() {
     <>
       <div className="nav">
           <div className="nav__logo">
-              <Image src="/images/logo/logo.png" alt="BlueNileExpedition" width={800} height={800} quality={100} />
+              <Image src="/images/logo/logo.png" alt="BlueNileExpedition" width={800} height={800} quality={100} priority/>
           </div>
           <div className="nav__items">
               <Link href={"/"}>Home</Link>
-              <Link href={"/"}>Why Ethiopia</Link>
+              <Link href={"/whyeth"}>Why Ethiopia</Link>
               <div className="nav__dropdown">
                 <div>Destinations {"▼"}</div>
                 <div className="nav__dropdown_c">
-                    <Link href={"/"} >The Northern Circuit</Link>
-                    <Link href={"/"} >The Southern Circuit</Link>
-                    <Link href={"/"} >The Eastern Circuit</Link>
-                    <Link href={"/"} >The Western Circuit</Link>
+                    {destinations.map((dest, index) => (
+                        <Link key={index} href={`/destinations/${dest.id}`}>{dest.name}</Link>
+                    ))}
                 </div>
               </div>
               <div className="nav__dropdown">
@@ -73,14 +73,13 @@ export default function Navbar() {
           </div>
           <div className="navItems__mobile">
               <Link href={"/"} className="navItems__item" onClick={() => toggleMobile()}>Home</Link>
-              <Link href={"/"} className="navItems__item" onClick={() => toggleMobile()}>Why Ethiopia</Link>
+              <Link href={"/whyeth"} className="navItems__item" onClick={() => toggleMobile()}>Why Ethiopia</Link>
               <div className="navItems__item nav__dropdown">
                   <div>Destinations {"▼"}</div>
                   <div style={{backgroundColor: "#252324"}} className="nav__dropdown_c">
-                      <Link href={"/"} onClick={() => toggleMobile()} >The Northern Circuit</Link>
-                      <Link href={"/"} onClick={() => toggleMobile()} >The Southern Circuit</Link>
-                      <Link href={"/"} onClick={() => toggleMobile()} >The Eastern Circuit</Link>
-                      <Link href={"/"} onClick={() => toggleMobile()} >The Western Circuit</Link>
+                        {destinations.map((dest, index) => (
+                            <Link key={index} href={`/destinations/${dest.id}`} onClick={() => toggleMobile()} >{dest.name}</Link>
+                        ))}
                   </div>
               </div>
               <div href={"/"} className="navItems__item nav__dropdown">

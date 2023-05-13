@@ -1,0 +1,292 @@
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 100px;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.hero{
+    /* background-color: #000; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  .hero__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    transform: translateY(50%);
+    overflow: hidden;
+    z-index: 1;
+    animation: heroEnter 1s ease-in-out;
+  }
+  @keyframes heroEnter{
+    0%{
+      scale: 1.5;
+    }
+    100%{
+      scale: 1;
+    }
+  }
+  .hero__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .hero__text{
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    padding:  50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, #000000 , transparent 70%);
+    color: #fff;
+  }
+  .hero__text__title{
+    max-width: 60%;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 5rem;
+  }
+  /* //////////////////////////////////////////////////////////////////////////////////////////////// */
+.dest{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    padding: 50px 100px;
+}
+.dest__left{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.dest__left__img{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #eee;
+}
+.dest__left__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s;
+}
+.dest__left__name{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #00000055;
+}
+.dest__left__name h1{
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 5px solid #fff;
+    border-radius: 20px;
+}
+.dest__left__desc{
+    padding: 10px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: #252324;
+    /* background-color: #307dab; */
+    border: 1px solid #307dab;
+    border-radius: 20px;
+    transition: .3s;
+}
+.dest__left__desc p{
+    margin-bottom: 20px;
+}
+.dest__left__desc p:nth-of-type(even){
+    padding: 0 10px;
+}
+.dest__left__desc p:nth-of-type(odd){
+    /* background-color: #252324; */
+    border-radius: 10px;
+    padding: 10px;
+    color: #252324;
+}
+.dest__left__desc button{
+    padding: 10px 20px;
+    border: 1px solid #307dab;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px #00000055;
+    border-radius: 10px;
+    color: #307dab;
+    font-size: .9rem;
+    font-weight: 500;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+    transition: .3s;
+}
+.dest__left__desc button:hover{
+    background-color: #307dab;
+    color: #fff;
+    box-shadow: 5px 5px 10px #00000055;
+}
+.dest__right{
+    flex: 1;
+}
+/* ///////////////////////////////////////////////////////// */
+.tourslist{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #eee;
+    border-radius: 20px;
+}
+.tourslist__row{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .3s;
+}
+.tourslist__row:hover{
+    height: 100px;
+}
+.tourslist__img{
+    width: 100%;
+    background-color: #eee;
+}
+.tourslist__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s;
+}
+.tourslist__row:hover .tourslist__img img{
+    transform: scale(1.3);
+}
+.tourslist__row h3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #00000055;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+
+
+
+  /*///////////////////////////////////////////////////////////////////// @media queries //////////////////////////////////////////////////////////////*/ 
+
+
+@media only screen and (max-width: 599px){
+    .hero{
+      height: 500px;
+    }
+    .hero__text{
+      padding: 20px;
+    }
+    .hero__text__title{
+      font-size: 3rem;
+      line-height: 3rem;
+      max-width: 100%;
+    }
+    .dest{
+        padding: 0 20px 50px;
+        flex-direction: column;
+    }
+    .dest__left{
+        flex: auto;
+    }
+    .dest__left__img{
+        height: 300px;
+    }
+    .dest__left__name h1{
+        font-size: 2rem;
+    }
+    .dest__left__desc{
+        text-align: justify;
+        hyphens: auto;
+    }
+    .dest__right{
+        flex: auto;
+    }
+  }
+  @media only screen and (min-width: 600px) and (max-width: 768px){
+    .hero{
+      height: 500px;
+    }
+    .hero__text{
+        padding: 20px;
+    }
+    .hero__text__title{
+        max-width: 100%;
+    }
+    .dest{
+        padding: 50px 20px;
+        flex-direction: column;
+    }
+    .dest__left{
+        flex: auto;
+    }
+    .dest__right{
+        flex: auto;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1000px){
+    /* .hero{
+      height: 500px;
+    } */
+    .dest__left{
+        flex: 2;
+    }
+    .dest{
+        padding: 50px;
+    }
+  }
+  

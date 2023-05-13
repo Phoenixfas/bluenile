@@ -17,7 +17,7 @@ export default function Welcome() {
             <div className={style.welcome__img}>
                 <ParallaxProvider>
                     <Parallax speed={-20} className={style.welcome__img__inner}>
-                            <Image src='/images/home/abay.jpg' alt="Welcome" fill />
+                            <Image src='/images/home/abay.jpg' alt="Welcome" width={1000} height={1000} priority />
                     </Parallax>
                 </ParallaxProvider>
                 </div>

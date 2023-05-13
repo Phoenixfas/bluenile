@@ -19,7 +19,7 @@ export default function ToursList() {
         {t.map((tour, index) => (
           <div key={index} className={style.tourslist__item}>
             <div className={style.tour__img}>
-              <Image src={tour.image} alt={tour.name} width={300} height={300} />
+              <Image src={tour.image} alt={tour.name} width={600} height={600} />
             </div>
             <div className={style.tour__content}>
               <h2>{tour.name}</h2>
