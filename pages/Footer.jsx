@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
+import destinations from "../data/destinations";
+import tours from "../data/tours";
 
 
 export default function Footer() {
@@ -30,18 +32,17 @@ export default function Footer() {
             </div>
             <div className="footer__col">
                 <h3>Destinations</h3>
-                <Link href={"/"}>🡲 The Northern Circuit</Link>
-                <Link href={"/"}>🡲 The Southern Circuit</Link>
-                <Link href={"/"}>🡲 The Eastern Circuit</Link>
-                <Link href={"/"}>🡲 The Western Circuit</Link>
+                {destinations?.map((dest, index) => (
+                    <Link key={index} href={`/destinations/${dest.id}`}>🡲 {dest.name}</Link>
+                ))}
             </div>
             <div className="footer__col">
                 <h3>Quick Links</h3>
-                <Link href={"/"}>• Why Ethiopia</Link>
-                <Link href={"/"}>• Tours By Experiences</Link>
-                <Link href={"/"}>• Popular Ethiopia Tours</Link>
-                <Link href={"/"}>• Our Service</Link>
-                <Link href={"/"}>• About Us</Link>
+                <Link href={"/whyeth"}>• Why Ethiopia</Link>
+                <Link href={"/tours"}>• Tours By Experiences</Link>
+                <Link href={"/popular"}>• Popular Ethiopia Tours</Link>
+                <Link href={"/service"}>• Our Service</Link>
+                <Link href={"/about"}>• About Us</Link>
             </div>
         </div>
         <div className="footer__bottom">
