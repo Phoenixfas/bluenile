@@ -12,12 +12,12 @@ export default function Hero() {
     <div className={style.hero}>
         <ParallaxProvider>
             <Parallax speed={-20} className={style.hero__img}>
-                <Image src='/images/home/welcome.png' alt="Omo Valley" fill />
+                <Image src='/images/home/ertaale.jpg' alt="Erta Ale" fill />
             </Parallax>
         </ParallaxProvider>
         <div className={style.hero__text}>
             <motion.div initial={{y: "100%", opacity: 0}} animate={{y: 0, opacity: 1}} transition={{duration: 5, stiffness: 50, bounce: 0.8, type: "spring" }} className={style.hero__text__title}>
-                Tours
+                Tours By Experiences
             </motion.div>
         </div>
     </div>

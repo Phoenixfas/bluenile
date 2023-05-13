@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { AiOutlineClose } from "react-icons/ai"
 import { HiOutlineMenu } from "react-icons/hi"
 import destinations from "../data/destinations";
+import tours from "../data/tours";
 
 export default function Navbar() {
   const mobileRef = useRef(null)
@@ -39,7 +40,7 @@ export default function Navbar() {
               <div className="nav__dropdown">
                 <div>Destinations {"▼"}</div>
                 <div className="nav__dropdown_c">
-                    {destinations.map((dest, index) => (
+                    {destinations?.map((dest, index) => (
                         <Link key={index} href={`/destinations/${dest.id}`}>{dest.name}</Link>
                     ))}
                 </div>
@@ -47,12 +48,9 @@ export default function Navbar() {
               <div className="nav__dropdown">
                 <Link href={"/tours"}>Tours by experiences {"▼"}</Link>
                 <div className="nav__dropdown_c">
-                    <Link href={"/"} >Historical Tours</Link>
-                    <Link href={"/"} >Cultural Tours</Link>
-                    <Link href={"/"} >Photographic Tours</Link>
-                    <Link href={"/"} >Trekking and Hiking Tours</Link>
-                    <Link href={"/"} >Wildlife Safaris</Link>
-                    <Link href={"/"} >Food and Drink Tours</Link>
+                    {tours?.map((tour, index) => (
+                        <Link key={index} href={`/tours#${tour.id}`} >{tour.name}</Link>
+                    ))}
                 </div>
               </div>
               <Link href={"/"}>Popular ethiopia tours</Link>
@@ -85,12 +83,9 @@ export default function Navbar() {
               <div href={"/"} className="navItems__item nav__dropdown">
                   <Link href={"/tours"} onClick={() => toggleMobile()}>Tours by experiences {"▼"}</Link>
                   <div style={{backgroundColor: "#252324"}} className="nav__dropdown_c">
-                    <Link href={"/"} >Historical Tours</Link>
-                    <Link href={"/"} onClick={() => toggleMobile()} >Cultural Tours</Link>
-                    <Link href={"/"} onClick={() => toggleMobile()} >Photographic Tours</Link>
-                    <Link href={"/"} onClick={() => toggleMobile()} >Trekking and Hiking Tours</Link>
-                    <Link href={"/"} onClick={() => toggleMobile()} >Wildlife Safaris</Link>
-                    <Link href={"/"} onClick={() => toggleMobile()} >Food and Drink Tours</Link>
+                    {tours?.map((tour, index) => (
+                        <Link key={index} href={`/tours#${tour.id}`} onClick={() => toggleMobile()}>{tour.name}</Link>
+                    ))}
                   </div>
               </div>
               <Link href={"/"} className="navItems__item" onClick={() => toggleMobile()}>Popular ethiopia tours</Link>

@@ -8,7 +8,8 @@ export default function ToursList() {
   const [t, setT] = useState([])
 
   useEffect(() => {
-    setT(tours.splice(0, 3))
+    const copiedTours = [...tours];
+    setT(copiedTours.splice(0, 3));
   }, [tours])
 
   return (
@@ -24,7 +25,7 @@ export default function ToursList() {
             <div className={style.tour__content}>
               <h2>{tour.name}</h2>
               <p>Duration {tour.duration} days</p>
-              <Link href="/">Details</Link>
+              <Link href={`/tours#${tour.id}`}>Details</Link>
             </div>
           </div>
         ))}

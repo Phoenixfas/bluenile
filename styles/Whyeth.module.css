@@ -183,7 +183,7 @@
     }
     .hero__text__title{
         max-width: 100%;
-      }
+    }
   }
   @media only screen and (min-width: 768px) and (max-width: 1000px){
     /* .hero{

@@ -130,6 +130,8 @@
 }
 .dest__left__desc p{
     margin-bottom: 20px;
+    text-align: justify;
+    hyphens: auto;
 }
 .dest__left__desc p:nth-of-type(even){
     padding: 0 10px;

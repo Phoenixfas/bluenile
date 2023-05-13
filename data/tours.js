@@ -1,6 +1,6 @@
 const tours = [
     {
-        id: 1,
+        id: "1",
         name: "Historical Tours",
         image: "/images/tours/historical.jpg",
         duration: "5",
@@ -9,7 +9,7 @@ const tours = [
         ],
     },
     {
-        id: 2,
+        id: "2",
         name: "Cultural Tours",
         image: "/images/tours/cultural.jpg",
         duration: "5",
@@ -18,7 +18,7 @@ const tours = [
         ],
     },
     {
-        id: 3,
+        id: "3",
         name: "Wildlife Safaris",
         image: "/images/tours/safari.jpg",
         duration: "5",
@@ -27,7 +27,7 @@ const tours = [
         ],
     },
     {
-        id: 4,
+        id: "4",
         name: "Trekking and Hiking Tours",
         image: "/images/tours/hiking.jpg",
         duration: "5",
@@ -36,7 +36,7 @@ const tours = [
         ],
     },
     {
-        id: 5,
+        id: "5",
         name: "Photographic Tours",
         image: "/images/tours/photographic.jpg",
         duration: "5",
@@ -46,7 +46,7 @@ const tours = [
         ],
     },
     {
-        id: 6,
+        id: "6",
         name: "Food and Drink Tours",
         image: "/images/tours/food.jpeg",
         duration: "5",
