@@ -270,6 +270,7 @@ a {
 }
 .footer__socials a:hover{
   background-color: #307dab;
+  color: #fff;
 }
 .footer__bottom{
   position: relative;

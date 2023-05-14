@@ -3,6 +3,7 @@ import style from "../styles/Home.module.css"
 import { useRef, useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion"
 import { FaChevronCircleRight, FaChevronCircleLeft } from "react-icons/fa"
+import { useRouter } from "next/router";
 
 const variant1 = {
     hidden: {
@@ -55,7 +56,13 @@ const variant2 = {
 export default function Hero() {
     const [current, setCurrent] = useState(0)
     const slideRef = useRef(null)
-    const length = slideRef.current ? slideRef.current.children.length : 0
+    const length = slideRef.current ? slideRef.current.children.length : 0;
+    const router = useRouter()
+
+
+    const goTo = (id) => {
+        router.push(`/destinations/${id}`)
+    }
 
     const nextSlide = () => {
         if (slideRef.current) {
@@ -115,7 +122,7 @@ export default function Hero() {
                                 <>
                                     <motion.h1 variants={variant1} initial="hidden" animate="visible" exit="exit" >THE NORTHERN CIRCUIT</motion.h1>
                                     <motion.p variants={variant2} initial="hidden" animate="visible" exit="exit" >An experience that is truly unique and awe-inspiring.</motion.p>
-                                    <motion.button variants={variant2} initial="hidden" animate="visible" exit="exit" >More Detail</motion.button>
+                                    <motion.button variants={variant2} initial="hidden" animate="visible" exit="exit" onClick={() => goTo("1")} >More Detail</motion.button>
                                 </>
                             )}
                         </AnimatePresence>
@@ -129,7 +136,7 @@ export default function Hero() {
                                 <>
                                     <motion.h1 variants={variant1} initial="hidden" animate="visible" exit="exit" >THE SOUTHERN CIRCUIT</motion.h1>
                                     <motion.p variants={variant2} initial="hidden" animate="visible" exit="exit" >A land of breathtaking natural beauty and rich cultural diversity.</motion.p>
-                                    <motion.button variants={variant2} initial="hidden" animate="visible" exit="exit" >More Detail</motion.button>
+                                    <motion.button variants={variant2} initial="hidden" animate="visible" exit="exit" onClick={() => goTo("2")} >More Detail</motion.button>
                                 </>
                             )}
                         </AnimatePresence>
@@ -143,7 +150,7 @@ export default function Hero() {
                                 <>
                                     <motion.h1 variants={variant1} initial="hidden" animate="visible" exit="exit" >THE EASTERN CIRCUIT</motion.h1>
                                     <motion.p variants={variant2} initial="hidden" animate="visible" exit="exit" >Explore the stunning and culturally rich region of Eastern Ethiopia. </motion.p>
-                                    <motion.button variants={variant2} initial="hidden" animate="visible" exit="exit" >More Detail</motion.button>
+                                    <motion.button variants={variant2} initial="hidden" animate="visible" exit="exit" onClick={() => goTo("3")} >More Detail</motion.button>
                                 </>
                             )}
                         </AnimatePresence>
@@ -157,7 +164,7 @@ export default function Hero() {
                                 <>
                                     <motion.h1 variants={variant1} initial="hidden" animate="visible" exit="exit" >THE WESTERN CIRCUIT</motion.h1>
                                     <motion.p variants={variant2} initial="hidden" animate="visible" exit="exit" >A region that boasts of breathtaking landscapes, incredible wildlife, and unparalleled ethnic diversity.</motion.p>
-                                    <motion.button variants={variant2} initial="hidden" animate="visible" exit="exit" >More Detail</motion.button>
+                                    <motion.button variants={variant2} initial="hidden" animate="visible" exit="exit" onClick={() => goTo("4")} >More Detail</motion.button>
                                 </>
                             )}
                         </AnimatePresence>

@@ -22,7 +22,11 @@ const Destination = () => {
     useEffect(() => {
         if (destId) {
           const d = destinations.find(dest => dest.id === destId)
-          setDest(d)
+          if (d) {
+            setDest(d)
+          }else {
+            router.push('/')
+          }
         }
     }, [destId])
     

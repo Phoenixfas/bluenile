@@ -24,10 +24,10 @@ export default function Footer() {
                 <p>Email: hello@bluenileexpedition.com</p>
                 <p>Address: Addis Ababa, Ethiopia</p>
                 <div className="footer__socials">
-                    <Link href="https://www.facebook.com/BlueNileExpeditions/" target="_blank"><FaFacebook /></Link>
-                    <Link href="https://www.instagram.com/bluenileexpeditions/" target="_blank"><FaInstagram /></Link>
-                    <Link href="https://twitter.com/BlueNileExpedi1" target="_blank"><FaTwitter /></Link>
-                    <Link href="https://www.linkedin.com/company/bluenileexpeditions/" target="_blank"><FaLinkedin /></Link>
+                    <Link href="https://www.facebook.com/" target="_blank"><FaFacebook /></Link>
+                    <Link href="https://www.instagram.com/" target="_blank"><FaInstagram /></Link>
+                    <Link href="https://twitter.com/" target="_blank"><FaTwitter /></Link>
+                    <Link href="https://www.linkedin.com/company/" target="_blank"><FaLinkedin /></Link>
                 </div>
             </div>
             <div className="footer__col">
@@ -40,9 +40,9 @@ export default function Footer() {
                 <h3>Quick Links</h3>
                 <Link href={"/whyeth"}>• Why Ethiopia</Link>
                 <Link href={"/tours"}>• Tours By Experiences</Link>
-                <Link href={"/popular"}>• Popular Ethiopia Tours</Link>
                 <Link href={"/service"}>• Our Service</Link>
                 <Link href={"/about"}>• About Us</Link>
+                <Link href={"/"}>• Contact Us</Link>
             </div>
         </div>
         <div className="footer__bottom">

@@ -53,9 +53,9 @@ export default function Navbar() {
                     ))}
                 </div>
               </div>
-              <Link href={"/"}>Popular ethiopia tours</Link>
-              <Link href={"/"}>Our service</Link>
-              <Link href={"/"}>About us</Link>
+              <Link href={"/service"}>Our service</Link>
+              <Link href={"/about"}>About us</Link>
+              <Link href={"/contact"}>Contact us</Link>
           </div>
 
           <div className="nav__mobile" onClick={() => toggleMobile()}>
@@ -88,9 +88,9 @@ export default function Navbar() {
                     ))}
                   </div>
               </div>
-              <Link href={"/"} className="navItems__item" onClick={() => toggleMobile()}>Popular ethiopia tours</Link>
-              <Link href={"/"} className="navItems__item" onClick={() => toggleMobile()}>Our service</Link>
-              <Link href={"/"} className="navItems__item" onClick={() => toggleMobile()}>About us</Link>
+              <Link href={"/service"} className="navItems__item" onClick={() => toggleMobile()}>Our service</Link>
+              <Link href={"/about"} className="navItems__item" onClick={() => toggleMobile()}>About us</Link>
+              <Link href={"/contact"} className="navItems__item" onClick={() => toggleMobile()}>Contact us</Link>
           </div>
       </div>
     </>

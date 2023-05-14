@@ -52,7 +52,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to top, #000000 , transparent 70%);
+    background: linear-gradient(to top, #307dab , transparent 70%);
     color: #fff;
   }
   .hero__text__title{
@@ -160,6 +160,14 @@
   align-items: center;
   padding: 50px 100px;
 }
+.tours__desc{
+  max-width: 80%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 2rem;
+  margin-bottom: 50px;
+}
 .tours__item{
   width: 100%;
   display: flex;
@@ -257,6 +265,9 @@
   .tours{
     padding: 50px 20px;
   }
+  .tours__desc{
+    max-width: 100%;
+  }
   .tours__item__img img{
     filter: blur(0px);
   }
@@ -281,6 +292,9 @@
   }
   .tours{
     padding: 50px 20px;
+  }
+  .tours__desc{
+    max-width: 100%;
   }
   .tours__item__img img{
     filter: blur(0px);

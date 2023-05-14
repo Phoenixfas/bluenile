@@ -24,7 +24,7 @@
     left: 0;
     width: 100%;
     height: 150%;
-    transform: translateY(50%);
+    transform: translateY(30%);
     overflow: hidden;
     z-index: 1;
     animation: heroEnter 1s ease-in-out;
@@ -63,85 +63,92 @@
     line-height: 5rem;
   }
   /* //////////////////////////////////////////////////////////////////////////////////////////////// */
-  .whyeth{
+
+.service{
     width: 100%;
-    min-height: 100vh;
+    padding: 0 50px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 70px;
-    /* background-color: #252324; */
 }
-.whyeth__list{
-    max-width: 1000px;
+.service__desc{
+    max-width: 80%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 2rem;
+    margin: 50px 0;
+}
+.service__list{
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 70px;
+    gap: 30px;
 }
-.whyeth__row{
-    display: flex;
-    /* background-color: #307dab; */
-    background: linear-gradient(to bottom, #307dab, #252324);
-    border-radius: 10px;
-    min-height: 100px;
-    width: 100%;
-    padding: 30px;
+.service__item{
     position: relative;
-    cursor: pointer;
-    transition: .3s;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
 }
-.whyeth__row:hover{
-    scale: 1.05;
-    box-shadow: 0 5px 10px #00000055;
-}
-.whyeth__row__l{
+.service__item__img{
     position: absolute;
     top: 0;
-    width: 100px;
-    height: 100px;
-    background-color: #252324;
-    box-shadow: 10px 10px 10px #00000055;
-    border: 5px solid #fff;
-    border-radius: 10px;
-    padding: 20px;
-}
-.whyeth__row:nth-of-type(even) > .whyeth__row__l{
-    right: 0;
-    transform: translateY(-50%) translateX(50%);
-}
-.whyeth__row:nth-of-type(odd) > .whyeth__row__l{
     left: 0;
-    transform: translateY(-50%) translateX(-50%);
-}
-.whyeth__row__l img{
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    overflow: hidden;
 }
-.whyeth__row__r{
+.service__item__img img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s ease-in-out;
+}
+.service__item:hover .service__item__img img{
+    transform: scale(1.1);
+    filter: blur(5px);
+}
+.service__item__content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #00000088;
+    padding: 20px;
+}
+.service__item__border{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    color: #fff;
-    justify-content: center;
     align-items: center;
-    gap: 10px;
-    text-align: center;
-    padding: 0 20px;
-}
-.whyeth__row__r h3{
-    font-size: 1.7rem;
-    font-weight: bold;
+    gap: 20px;
     color: #fff;
 }
-.whyeth__row__r p{
+.service__item__border h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-align: center;
+}
+.service__item__border p{
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5rem;
     text-align: center;
     hyphens: auto;
 }
 
 
-  /*///////////////////////////////////////////////////////////////////// @media queries //////////////////////////////////////////////////////////////*/ 
+
+
+/*///////////////////////////////////////////////////////////////////// @media queries //////////////////////////////////////////////////////////////*/ 
 
 
 @media only screen and (max-width: 599px){
@@ -152,26 +159,20 @@
       padding: 20px;
     }
     .hero__text__title{
-      font-size: 3rem;
-      line-height: 3rem;
+      font-size: 2.5rem;
+      line-height: 2.5rem;
       max-width: 100%;
     }
-    .whyeth{
-        padding: 100px 20px;
+    .service{
+        padding: 50px 20px;
     }
-    .whyeth__row{
-        padding: 30px 0;
+    .service__desc{
+        max-width: 100%;
+        text-align: justify;
+        hyphens: auto;
     }
-    .whyeth__row:nth-of-type(even) > .whyeth__row__l{
-        left: 50%;
-        transform: translateY(-50%) translateX(-50%);
-    }
-    .whyeth__row:nth-of-type(odd) > .whyeth__row__l{
-        left: 50%;
-        transform: translateY(-50%) translateX(-50%);
-    }
-    .whyeth__row__r{
-        padding-top: 40px;
+    .service__item__border p{
+        text-align: justify;
     }
   }
   @media only screen and (min-width: 600px) and (max-width: 768px){
@@ -184,10 +185,13 @@
     .hero__text__title{
         max-width: 100%;
     }
+    .service__desc{
+        max-width: 100%;
+    }
   }
   @media only screen and (min-width: 768px) and (max-width: 1000px){
-    /* .hero{
-      height: 500px;
-    } */
+
   }
-  
+  @media only screen and (min-width: 1000px) and (max-width: 1200px){
+
+  }
