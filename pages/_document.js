@@ -21,7 +21,7 @@ export default function Document() {
           <meta name="twitter:image" content="https://res.cloudinary.com/drp73bqti/image/upload/v1684088229/samples/abay_jgtqqk.jpg" />
           <meta name="twitter:card" content="summary_large_image" />
           {/* <!-- Add Favicon --> */}
-          <link rel="icon" type="image/png" sizes="32x32" href="/images/logo/logo_cropped.svg" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/images/logo_cropped.svg" />
       </Head>
       <body>
         <Main />
