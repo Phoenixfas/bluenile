@@ -6,7 +6,7 @@ export default function Service() {
   return (
     <div className={style.service}>
       <div className={style.service__desc}>
-        Blue Nile Expeditions is an experienced tour operator in Ethiopia, offering customized and authentic tours to explore this enchanting country's rich culture, history, and nature. Our team of expert guides and travel planners work together to create unforgettable experiences for our clients. Here are some of the services we offer:
+        Blue Nile Expeditions is an experienced tour operator in Ethiopia, offering customized and authentic tours to explore this enchanting country&apos;s rich culture, history, and nature. Our team of expert guides and travel planners work together to create unforgettable experiences for our clients. Here are some of the services we offer:
       </div>
       <div className={style.service__list}>
           {services?.map((item, index) => (
