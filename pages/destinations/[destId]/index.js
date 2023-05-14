@@ -5,10 +5,17 @@ import { useEffect, useState } from "react"
 import Image from "next/image"
 import ToursListSide from "./ToursListSide"
 import tours from "../../../data/tours"
+import Head from "next/head"
 
 export default function index() {
   return (
-    <Destination />
+    <>
+      <Head>
+        <title>Blue Nile Expedition | Destinations</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
+      <Destination />
+    </>
   )
 }
 

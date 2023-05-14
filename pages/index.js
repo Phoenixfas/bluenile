@@ -12,10 +12,8 @@ export default function Home() {
   return (
     <div className={style.main}>
         <Head>
-          <title>BlueNileExpeditions</title>
-          <meta name="description" content="Blue Nile Expeditions" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link rel="icon" href="/logo_cropped.png" />
+          <title>Blue Nile Expedition</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </Head>
         
         <Hero />
