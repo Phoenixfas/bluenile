@@ -97,7 +97,7 @@ export default function Hero() {
                     setCurrent(current + 1)
                 }
             }
-        }, 5000)
+        }, 10000)
 
         return () => clearInterval(interval)
     }, [current])

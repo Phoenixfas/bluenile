@@ -288,7 +288,7 @@ a {
 /*///////////////////////////////////////////////////////////////////// @media queries //////////////////////////////////////////////////////////////*/ 
 
 
-@media only screen and (max-width: 599px){
+@media only screen and (max-width: 600px){
   .nav{
     flex-wrap: wrap;
     height: auto;
@@ -325,6 +325,19 @@ a {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1000px){
+  .nav{
+    flex-wrap: wrap;
+  }
+  .nav__items{
+    display: none;
+  }
+  .nav__mobile{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1400px){
   .nav{
     flex-wrap: wrap;
   }

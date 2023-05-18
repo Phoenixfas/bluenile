@@ -537,4 +537,12 @@
     width: 400px;
     height: 500px;
   }
+  .dest{
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1350px){
+  .dest{
+    width: 40%;
+  }
 }
