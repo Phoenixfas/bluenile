@@ -40,7 +40,7 @@ export default function Footer() {
                 <h3>Quick Links</h3>
                 <Link href={"/whyeth"}>• Why Ethiopia</Link>
                 <Link href={"/tours"}>• Tours By Experiences</Link>
-                <Link href={"/service"}>• Our Service</Link>
+                <Link href={"/ethio-tours"}>• Ethiopia Tours</Link>
                 <Link href={"/about"}>• About Us</Link>
                 <Link href={"/"}>• Contact Us</Link>
             </div>
