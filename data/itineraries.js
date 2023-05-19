@@ -1,4 +1,4 @@
-const initeraries = [
+const itineraries = [
     {
         id: "1",
         name: "ONE DAY PROGRAMS",
@@ -2768,4 +2768,4 @@ const initeraries = [
     },
 ]
 
-export default initeraries;
+export default itineraries;

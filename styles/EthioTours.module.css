@@ -65,6 +65,38 @@
   /* //////////////////////////////////////////////////////////////////////////////////////////////// */
 
 
+  .et{
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    gap: 5px;
+  }
+  .et__l{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #eee; */
+    gap: 2px;
+  }
+  .et__l__name{
+    background-color: #eee;
+    color: #307dab;
+    width: 100%;
+    padding: 20px;
+    transition: .3s;
+  }
+  .et__l__name h3{
+    text-align: center;
+    font-weight: 300;
+    transition: .3s;
+  }
+  .et__l__active{
+    background-color: #307dab;
+    color: #fff;
+  }
+
+
 
 
 /*///////////////////////////////////////////////////////////////////// @media queries //////////////////////////////////////////////////////////////*/ 
