@@ -79,7 +79,7 @@ const Destination = () => {
             <div className={style.dest__left__desc}>
                   <h1 style={{fontSize: "2rem", fontWeight: "300", textAlign: "center", lineHeight: "2.8rem"}}>Your Ethiopian Journey Begins in Addis Ababa</h1>
                   <p>As you embark on your Ethiopian adventure, your journey will commence in Addis Ababa, the vibrant capital city. Serving as the gateway to Ethiopia, this bustling metropolis offers a blend of traditional charm and modern amenities. Spend a day or two exploring Addis, allowing yourself to absorb the vibrant culture, delve into the local markets, and savor the flavors of authentic Ethiopian cuisine.</p>
-                  <p>Get ready to unlock the secrets of Ethiopia's major travel regions, where ancient wonders, breathtaking landscapes, and vibrant cultures intertwine. Each region holds a unique allure, and as you venture through them, you'll create cherished memories that will stay with you forever.  Blue Nile Expeditions welcomes you to embark on this extraordinary journey and invites you to experience the wonders of Ethiopia firsthand.</p>
+                  <p>Get ready to unlock the secrets of Ethiopia&apos;s major travel regions, where ancient wonders, breathtaking landscapes, and vibrant cultures intertwine. Each region holds a unique allure, and as you venture through them, you&apos;ll create cherished memories that will stay with you forever.  Blue Nile Expeditions welcomes you to embark on this extraordinary journey and invites you to experience the wonders of Ethiopia firsthand.</p>
             </div>
 
           </div>
