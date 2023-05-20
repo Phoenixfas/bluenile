@@ -3,7 +3,7 @@ const itineraries = [
         id: "1",
         name: "ONE DAY PROGRAMS",
         description: "In and around Addis Ababa there are a number of exciting attractions. Take one of our day programs and enjoy a visit",
-        image: "https://picsum.photos/600/400",
+        image: "/images/ethio-tours/one_day.jpg",
         tours: [
             {
                 code: "BNE101",
@@ -41,7 +41,7 @@ const itineraries = [
         id: "2",
         name: "SHORT DURATION PROGRAMS",
         description: "Take a few days to explore some of Ethiopia’s beautiful lakes, national parks, and rift valley or perhaps visit the walled city of Harar and see the hyena Man!",
-        image: "https://picsum.photos/600/400",
+        image: "/images/ethio-tours/short.jpg",
         tours: [
             {
                 code: "BNE201",
@@ -99,7 +99,7 @@ const itineraries = [
         id: "3",
         name: "HISTORIC ROUTE AND NORTHERN CIRCUIT",
         description: "Embark on a captivating journey through Ethiopia's ancient historical sites, including the awe-inspiring churches of Lalibela and the majestic castles of Gondar.",
-        image: "https://picsum.photos/600/400",
+        image: "/images/ethio-tours/historical.jpg",
         tours: [
             {
                 code: "BNE301",
@@ -643,7 +643,7 @@ const itineraries = [
         id: "4",
         name: "SOUTHERN CIRCUIT",
         description: "Immerse yourself in the natural beauty of Ethiopia's southern region, with visits to national parks, lush landscapes, and tribal communities.",
-        image: "https://picsum.photos/600/400",
+        image: "/images/ethio-tours/southern.jpg",
         tours: [
             {
                 code: "BNE401",
@@ -945,7 +945,7 @@ const itineraries = [
         id: "5",
         name: "RIFT VALLEY, BALE MOUNTAINS AND THE EASTERN CIRCUIT",
         description: "Discover the stunning landscapes of the Rift Valley, witness the biodiversity of the Bale Mountains, and explore the captivating Eastern Circuits.",
-        image: "https://picsum.photos/600/400",
+        image: "/images/ethio-tours/bale.jpg",
         tours: [
             {
                 code: "BNE501",
@@ -1161,7 +1161,7 @@ const itineraries = [
         id: "6",
         name: "BIRD WATCHING",
         description: "Ethiopia is a paradise for bird enthusiasts, offering a wide variety of endemic and migratory bird species. Explore designated bird watching routes and witness the country's avian wonders.",
-        image: "https://picsum.photos/600/400",
+        image: "/images/ethio-tours/bird_watching.jpg",
         tours: [
             {
                 code: "BNE601",
@@ -1271,7 +1271,7 @@ const itineraries = [
         id: "7",
         name: "PHOTOGRAPHY EXPEDITIONS",
         description: "Capture the beauty of Ethiopia through your lens with dedicated photography tours, allowing you to document the country's landscapes, wildlife, and cultural treasures.",
-        image: "https://picsum.photos/600/400",
+        image: "/images/ethio-tours/photography.jpg",
         tours: [
             {
                 code: "BNE701",
@@ -1586,7 +1586,7 @@ const itineraries = [
         id: "8",
         name: "RELIGIOUS FESTIVALS OR FIXED SCHEDULES",
         description: "Experience the vibrancy and cultural richness of Ethiopian festivals, where music, dance, and ancient traditions come together in colorful celebrations.",
-        image: "https://picsum.photos/600/400",
+        image: "/images/ethio-tours/religious.jpg",
         tours: [
             {
                 code: "BNE801",
@@ -2306,7 +2306,7 @@ const itineraries = [
         id: "9",
         name: "COFFEE TOURS",
         description: "Delve into the origins of coffee in Ethiopia, visiting coffee plantations, participating in traditional coffee ceremonies, and learning about the country's deep coffee culture.",
-        image: "https://picsum.photos/600/400",
+        image: "/images/ethio-tours/coffee.jpg",
         tours: [
             {
                 code: "BNE901",
@@ -2412,7 +2412,7 @@ const itineraries = [
         id: "10",
         name: "BLENDING ADVENTURES",
         description: "Combine various activities and destinations to create a unique blend of adventure and exploration, tailored precisely to your preferences.",
-        image: "https://picsum.photos/600/400",
+        image: "/images/ethio-tours/blending.jpg",
         tours: [
             {
                 code: "BNE1001",

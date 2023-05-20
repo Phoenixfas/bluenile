@@ -119,9 +119,12 @@
   .tour__content{
     width: 100%;
     padding: 20px;
+    flex-grow: 1;
+    gap: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
   }
   .tour__content h2{
     font-size: 1.2rem;
