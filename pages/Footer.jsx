@@ -20,8 +20,8 @@ export default function Footer() {
             </div>
             <div className="footer__col">
                 <h3>Get In Touch</h3>
-                <p>Phone: +251 911 458 821</p>
-                <p>Email: hello@bluenileexpedition.com</p>
+                <p>Phone: +251 918 804 258</p>
+                <p>Email: hello@bluenileexpeditions.com</p>
                 <p>Address: Addis Ababa, Ethiopia</p>
                 <div className="footer__socials">
                     <Link href="https://www.facebook.com/" target="_blank"><FaFacebook /></Link>

@@ -33,9 +33,9 @@ export default function Contact() {
             <motion.div className={style.contact__card}>
                 <div className={style.card__title}>Contact Info</div>
                 <div className={style.card__content}>
-                    <Link href={"mailto:hello@bluenileexpedition.com"} className={style.card__info}><SiGmail size={30} /> info@bluenileexpedition.com</Link>
-                    <Link href={"https://maps.google.com"} target="_blank" className={style.card__info}><MdLocationPin size={30} /> Bole Around Edna Mall</Link>
-                    <Link href={"tel:+251911121314"} className={style.card__info}><MdCall size={30} /> +251 911 121 314</Link>
+                    <Link href={"mailto:hello@bluenileexpeditions.com"} className={style.card__info}><SiGmail size={25} /> hello@bluenileexpeditions.com</Link>
+                    <Link href={"https://maps.google.com"} target="_blank" className={style.card__info}><MdLocationPin size={25} /> Bole Around Edna Mall</Link>
+                    <Link href={"tel:+251911121314"} className={style.card__info}><MdCall size={25} /> +251 918 804 258</Link>
                 </div>
                 <div className={style.card__socials}>
                     <Link href="https://www.instagram.com/" target="_blank" rel="noreferrer">
@@ -55,7 +55,7 @@ export default function Contact() {
 
             <div className={style.contact__message}>
                 <div className={style.message__title}>Send a Message</div>
-                <form className={style.message__form} onSubmit={onSubmit} action="mailto:info@bluenileexpedition.com" method="post" encType="text/plain">
+                <form className={style.message__form} onSubmit={onSubmit} action="mailto:hello@bluenileexpeditions.com" method="post" encType="text/plain">
                     <div className={style.form__group}>
                         <label htmlFor="name">Name</label>
                         <input required type="text" name="name" id="name" value={name} onChange={(e) => setName(e.target.value)} />
