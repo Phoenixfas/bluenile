@@ -46,7 +46,7 @@ export default function Footer() {
             </div>
         </div>
         <div className="footer__bottom">
-            <p>&copy; 2023 BlueNileExpedition - All rights reserved</p>
+            <p>&copy; 2023 BlueNileExpedition | Developed by <Link href={"https://t.me/ras_metat"}>FASIKA</Link></p>
         </div>
     </div>
   )
