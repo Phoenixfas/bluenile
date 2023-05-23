@@ -1,7 +1,7 @@
 import style from "../../styles/Contact.module.css"
 import { SiGmail } from "react-icons/si";
 import { MdLocationPin, MdCall } from "react-icons/md";
-import { FaInstagram, FaLinkedin, FaFacebook, FaTwitter } from 'react-icons/fa'
+import { FaInstagram, FaFacebook, FaWhatsapp } from 'react-icons/fa'
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -33,29 +33,26 @@ export default function Contact() {
             <motion.div className={style.contact__card}>
                 <div className={style.card__title}>Contact Info</div>
                 <div className={style.card__content}>
-                    <Link href={"mailto:hello@bluenileexpeditions.com"} className={style.card__info}><SiGmail size={25} /> hello@bluenileexpeditions.com</Link>
-                    <Link href={"https://maps.google.com"} target="_blank" className={style.card__info}><MdLocationPin size={25} /> Bole Around Edna Mall</Link>
+                    <Link href={"mailto:contact@bluenileexpeditions.com"} className={style.card__info}><SiGmail size={25} /> contact@bluenileexpeditions.com</Link>
+                    <Link href={"https://maps.app.goo.gl/5TLauP59SMi4yL8g7"} target="_blank" className={style.card__info}><MdLocationPin size={25} /> Bole Around Edna Mall</Link>
                     <Link href={"tel:+251911121314"} className={style.card__info}><MdCall size={25} /> +251 918 804 258</Link>
                 </div>
                 <div className={style.card__socials}>
-                    <Link href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+                    <Link href="https://www.instagram.com/bluenileexpeditions/" target="_blank" rel="noreferrer">
                         <FaInstagram />
                     </Link>
                     <Link href="https://www.facebook.com/" target="_blank" rel="noreferrer">
                         <FaFacebook />
                     </Link>
-                    <Link href="https://www.twitter.com/" target="_blank" rel="noreferrer">
-                        <FaTwitter />
-                    </Link>
-                    <Link href="https://www.linkedin.com/company" target="_blank" rel="noreferrer">
-                        <FaLinkedin />
+                    <Link href="https://wa.me/+251918804258" target="_blank" rel="noreferrer">
+                        <FaWhatsapp />
                     </Link>
                 </div>
             </motion.div>
 
             <div className={style.contact__message}>
                 <div className={style.message__title}>Send a Message</div>
-                <form className={style.message__form} onSubmit={onSubmit} action="mailto:hello@bluenileexpeditions.com" method="post" encType="text/plain">
+                <form className={style.message__form} onSubmit={onSubmit} action="mailto:contact@bluenileexpeditions.com" method="post" encType="text/plain">
                     <div className={style.form__group}>
                         <label htmlFor="name">Name</label>
                         <input required type="text" name="name" id="name" value={name} onChange={(e) => setName(e.target.value)} />

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import destinations from "../data/destinations";
 import tours from "../data/tours";
 
@@ -21,13 +21,12 @@ export default function Footer() {
             <div className="footer__col">
                 <h3>Get In Touch</h3>
                 <p>Phone: +251 918 804 258</p>
-                <p>Email: hello@bluenileexpeditions.com</p>
+                <p>Email: contact@bluenileexpeditions.com</p>
                 <p>Address: Addis Ababa, Ethiopia</p>
                 <div className="footer__socials">
                     <Link href="https://www.facebook.com/" target="_blank"><FaFacebook /></Link>
-                    <Link href="https://www.instagram.com/" target="_blank"><FaInstagram /></Link>
-                    <Link href="https://twitter.com/" target="_blank"><FaTwitter /></Link>
-                    <Link href="https://www.linkedin.com/company/" target="_blank"><FaLinkedin /></Link>
+                    <Link href="https://www.instagram.com/bluenileexpeditions/" target="_blank"><FaInstagram /></Link>
+                    <Link href="https://wa.me/+251918804258" target="_blank"><FaWhatsapp /></Link>
                 </div>
             </div>
             <div className="footer__col">
